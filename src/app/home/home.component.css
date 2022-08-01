@@ -1,0 +1,329 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: -8px;
+    background-color: rgb(238, 238, 238);
+}
+
+/* navbar */
+.container-navbar {
+    height: 110vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("../../assets/images/mainphoto.png");
+    background-size: cover;
+    background-position: center;
+    /* margin: -8px; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+.logo {
+    color: white;
+    font-size: 38px;
+}
+
+.logo-img {
+    width: 90%;    
+}
+
+.logo span {
+    color: rgb(185, 0, 0);
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .4s;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);    
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+nav ul li:hover a {
+    color: #D70000;
+}
+
+.subscrib {
+    border: none;
+    background-color: #D70000;
+    padding: 12px 30px;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.subscrib:hover {
+    transform: scale(1.3);
+}
+
+
+
+/* support */
+.support {
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 4px black;
+}
+
+.support img {
+    width: 15%;
+    padding-bottom: 10px;    
+}
+
+.support p {
+    font-family: cursive;
+    font-size: 20px;
+}
+
+
+
+/* subscribes */
+.container-subscribes {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /* margin: -8px; */
+    padding-top: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.words-subscribes h3 {
+    color:#D70000;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.words-subscribes p {
+    font-size: 16px;
+    font-family: cursive;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.words-subscribes h1 {
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* font-weight: bold; */
+}
+
+.card-subscribes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.card {
+    width: 22%;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px rgb(131, 131, 131);
+    transition: .4s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    /* background-color: rgb(241, 252, 255); */
+}
+
+.card-bottom {
+    background-color: #dddddd;
+    height: auto;
+    border: none;
+    text-align: left;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 8%;
+}
+
+.card h1 {
+    font-family: serif;
+}
+
+.card h4 {
+    font-family: serif;
+    font-weight: lighter;
+    color: rgb(110, 106, 106);
+}
+
+.card h2 {
+    font-family: cursive;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px; transition: .4s;
+}
+
+.card:hover h2 {
+    color: rgb(29, 160, 79);
+}
+
+.card-bottom p {
+    font-size: 19px;
+    margin-top: 15px;
+}
+
+.card-bottom p i {
+    color: rgb(164, 164, 190);
+    transition: .4s;
+}
+
+.card:hover .card-bottom p i {
+    color: rgb(29, 160, 79);
+}
+
+.card button {
+    padding: 5% 8%;
+    font-size: 22px;
+    font-family: 'Courier New', Courier, monospace;    
+    font-weight: bold;
+    border: none;
+    margin-top: 10%;
+    background-color: rgb(29, 160, 79);
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: .5s;    
+}
+
+.card:hover button {
+    box-shadow: 4px 4px 40px black;
+}
+
+.card button:hover {
+    transform: scale(0.9);
+}
+
+
+/* 790px */
+@media screen and (max-width: 790px){
+    .card-subscribes {
+        display: block;
+        
+    }
+
+    .card {
+        width: 100%;
+        height: git commit -m "first commit"auto;
+        background-color: rgb(255, 255, 255);
+        padding-top: 40px;
+        padding-bottom: 30px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 6px 6px 20px rgb(131, 131, 131);
+        transition: .4s;
+        margin-bottom: 7%;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        /* background-color: rgb(241, 252, 255); */
+    }
+}
+
+
+
+/* 450px */
+@media screen and (max-width: 450px) {
+    .subscrib {
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .subscrib:hover {
+        transform: scale(0);
+        position: absolute;
+        top: 38%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    }
+
+    .support {
+        height: 250px;
+    }
+}
+
+
+
+/* 350px */
+@media screen and (max-width: 350px) {
+    .support {
+        height: 300px;
+    }
+}
+
+
+
+
+/* 220px */
+@media screen and (max-width: 250px) {
+    .subscrib {
+        padding: 10px 20px;
+        font-size: 13px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);  
+    }
+
+    .subscrib:hover {
+        transform: scale(0);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);        
+    }
+
+    nav ul {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -80%);
+    }
+
+    .support {
+        height: 400px;
+        width: 100px;
+    }
+}
