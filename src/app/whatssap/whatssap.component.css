@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: -8px;
+    background-color: rgb(238, 238, 238);
+}
+
+/* whatssap */
+
+.whatssap-logo {
+    position: fixed;
+    bottom: 40px;
+    right:20px;
+}
+
+.whatssap-logo img {
+    width: 70px;
+    transition: .4s;
+}
+
+.whatssap-logo img:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 650px){
+    .whatssap-logo img {
+        width: 50px;
+        transition: .4s;
+    }
+    
+    .whatssap-logo img:hover {
+        transform: scale(1.2);
+    }
+}
